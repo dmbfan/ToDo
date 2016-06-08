@@ -26,6 +26,8 @@ Partial Class ToDo
         Me.btnRemove = New System.Windows.Forms.Button()
         Me.lstBxList = New System.Windows.Forms.ListBox()
         Me.txtText = New System.Windows.Forms.TextBox()
+        Me.btnSave = New System.Windows.Forms.Button()
+        Me.txtBxSave = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnAdd
@@ -61,11 +63,29 @@ Partial Class ToDo
         Me.txtText.Size = New System.Drawing.Size(100, 20)
         Me.txtText.TabIndex = 3
         '
+        'btnSave
+        '
+        Me.btnSave.Location = New System.Drawing.Point(22, 169)
+        Me.btnSave.Name = "btnSave"
+        Me.btnSave.Size = New System.Drawing.Size(75, 23)
+        Me.btnSave.TabIndex = 4
+        Me.btnSave.Text = "Save"
+        Me.btnSave.UseVisualStyleBackColor = True
+        '
+        'txtBxSave
+        '
+        Me.txtBxSave.Location = New System.Drawing.Point(22, 198)
+        Me.txtBxSave.Name = "txtBxSave"
+        Me.txtBxSave.Size = New System.Drawing.Size(100, 20)
+        Me.txtBxSave.TabIndex = 5
+        '
         'ToDo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(527, 386)
+        Me.Controls.Add(Me.txtBxSave)
+        Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtText)
         Me.Controls.Add(Me.lstBxList)
         Me.Controls.Add(Me.btnRemove)
@@ -80,5 +100,7 @@ Partial Class ToDo
     Friend WithEvents btnRemove As System.Windows.Forms.Button
     Friend WithEvents lstBxList As System.Windows.Forms.ListBox
     Friend WithEvents txtText As System.Windows.Forms.TextBox
+    Friend WithEvents btnSave As System.Windows.Forms.Button
+    Friend WithEvents txtBxSave As System.Windows.Forms.TextBox
 
 End Class
