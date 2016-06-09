@@ -3,12 +3,15 @@
     Dim W As IO.StreamWriter
 
 
+
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
 
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        lstBxList.Items.AddRange(txtText.Text.Split(vbNewLine))
+        lstBxList.Items.Add(txtText.Text)
+        txtText.Clear()
+
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstBxList.SelectedIndexChanged
