@@ -24,7 +24,7 @@
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
         Dim i As Integer
-        W = New IO.StreamWriter("C:\" & txtBxSave.Text & ".txt")
+        W = New IO.StreamWriter("C:\Users\David\Documents" & txtBxSave.Text & ".txt")
         For i = 0 To lstBxList.Items.Count - 1
             W.WriteLine(lstBxList.Items.Item(i))
         Next
