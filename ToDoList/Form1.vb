@@ -5,7 +5,7 @@
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnRemove.Click
-
+        lstBxList.Items.Remove(lstBxList.Text)
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
